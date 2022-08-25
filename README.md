@@ -2,7 +2,9 @@
 
 Practica de como usa api fetch, usando la config de api falsa de [Json Server](https://github.com/typicode/json-server), tematica del juego clasico de [Golden Sun](https://en.wikipedia.org/wiki/Golden_Sun).
 
-La configuracion de Json Server es sencilla, se debe posicionar en la terminal dentro de la carpeta del projecto.
+[Click aqui para ver video demostrativo de la app](https://youtu.be/0kiqJZ7Bri8)
+
+En caso de querer ejecutarla, la configuracion de Json Server es sencilla, se debe posicionar en la terminal dentro de la carpeta del projecto.
 
 Estando alli se debe correr el comando:
 

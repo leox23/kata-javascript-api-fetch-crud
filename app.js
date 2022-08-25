@@ -1,10 +1,9 @@
-
-        const d = document,
-        $table = d.querySelector(".crud-table"),
-        $form = d.querySelector(".crud-form"),
-        $title = d.querySelector(".crud-title"),
-        $template = d.getElementById("crud-template").content,
-        $fragment = d.createDocumentFragment();
+const d = document,
+$table = d.querySelector(".crud-table"),
+$form = d.querySelector(".crud-form"),
+$title = d.querySelector(".crud-title"),
+$template = d.getElementById("crud-template").content,
+$fragment = d.createDocumentFragment();
  
 const getAll = async () => {
 
@@ -14,7 +13,6 @@ const getAll = async () => {
 
 
     if (!res.ok) throw { status: res.status, statusText: res.statusText };
-
 
     console.log(json);
     json.forEach(el => {
@@ -46,7 +44,7 @@ d.addEventListener("submit", async e => {
     e.preventDefault();
 
     if (!e.target.id.value) {
-      //Crear - POST
+      //Crear
       try {
         let options = {
           method: "POST",
@@ -69,7 +67,7 @@ d.addEventListener("submit", async e => {
         $form.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
       }
     } else {
-      //Actualizar - PUT
+      //Actualizar
       try {
         let options = {
           method: "PUT",
@@ -109,8 +107,6 @@ d.addEventListener("click", async e => {
     let initClass = e.target.getAttribute("data-claseinicial")
     window.open(
         "https://www.google.com/search?q=" + character + " " + initClass + "+anime+%7C+game+%7C+comic&hl=es&tbm=isch&sxsrf=ALiCzsZMpii8hY74m8NtwKYhQwX2pk2Lxw%3A1661411400353&iflsig=AJiK0e8AAAAAYwcuWBJkdKc4ICDOuvIn67ZE5clWxmiO&ved=0ahUKEwjPkd7it-H5AhXrdDABHbBdDoYQ4dUDCAc&uact=5&oq=leonelllllll+anime+%7C+game+%7C+comic&sclient=img", "_blank");
-    //var window = window.open("https://www.google.com/", "_blank");
-    //window.focus();
   }
 
  
@@ -118,7 +114,7 @@ d.addEventListener("click", async e => {
     let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id}?`);
 
     if (isDelete) {
-      //Delete - DELETE
+      //Borrar
       try {
         let options = {
           method: "DELETE",
