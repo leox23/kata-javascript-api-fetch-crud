@@ -1,51 +1,51 @@
 {
-    "Personaje": [
-      {
-        "id": 1,
-        "nombre": "Hans",
-        "claseInicial": "Escudero"
-      },
-      {
-        "id": 2,
-        "nombre": "Garet",
-        "claseInicial": "Defensor"
-      },
-      {
-        "id": 3,
-        "nombre": "Mia",
-        "claseInicial": "Vidente"
-      },
-      {
-        "id": 4,
-        "nombre": "Iván",
-        "claseInicial": "Adivino"
-      },
-      {
-        "id": 5,
-        "nombre": "Félix",
-        "claseInicial": "Aprendiz"
-      }
-    ],
-    "Djinn": [
-      {
-        "id": 1,
-        "nombre": "Venus",
-        "de": "Tierra"
-      },
-      {
-        "id": 2,
-        "nombre": "Marte",
-        "de": "Fuego"
-      },
-      {
-        "id": 3,
-        "nombre": "Mercurio",
-        "de": "Agua"
-      },
-      {
-        "id": 4,
-        "nombre": "Júpiter",
-        "de": "Aire"
-      }
-    ]
-  }
+  "personaje": [
+    {
+      "id": 1,
+      "nombre": "Hans",
+      "claseinicial": "Escudero"
+    },
+    {
+      "id": 2,
+      "nombre": "Garet",
+      "claseinicial": "Defensor"
+    },
+    {
+      "id": 3,
+      "nombre": "Mia",
+      "claseinicial": "Vidente"
+    },
+    {
+      "id": 4,
+      "nombre": "Iván",
+      "claseinicial": "Adivino"
+    },
+    {
+      "id": 5,
+      "nombre": "Félix",
+      "claseinicial": "Aprendiz"
+    }
+  ],
+  "djinn": [
+    {
+      "id": 1,
+      "nombre": "Venus",
+      "de": "Tierra"
+    },
+    {
+      "id": 2,
+      "nombre": "Marte",
+      "de": "Fuego"
+    },
+    {
+      "id": 3,
+      "nombre": "Mercurio",
+      "de": "Agua"
+    },
+    {
+      "id": 4,
+      "nombre": "Júpiter",
+      "de": "Aire"
+    }
+  ]
+}
