@@ -10,3 +10,5 @@ Estando alli se debe correr el comando:
 
 Se usara el puerto por defecto de json-server:
 `http://localhost:3000`
+
+Es posible visualizar personajes, modificar, agregar, y eliminar, adicionalmente esta mejorada la interfaz y tambien funcion para buscar imagenes de personajes.
