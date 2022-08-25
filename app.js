@@ -25,6 +25,8 @@ const getAll = async () => {
       $template.querySelector(".edit").dataset.name = el.nombre;
       $template.querySelector(".edit").dataset.claseinicial = el.claseinicial;
       $template.querySelector(".delete").dataset.id = el.id;
+      $template.querySelector(".searchimage").dataset.name = el.nombre;
+      $template.querySelector(".searchimage").dataset.claseinicial = el.claseinicial;
 
       let $clone = d.importNode($template, true);
       $fragment.appendChild($clone);
@@ -100,6 +102,15 @@ d.addEventListener("click", async e => {
     $form.nombre.value = e.target.dataset.name;
     $form.claseinicial.value = e.target.dataset.claseinicial;
     $form.id.value = e.target.dataset.id;
+  }
+
+  if (e.target.matches(".searchimage")){
+    let character = e.target.getAttribute("data-name")
+    let initClass = e.target.getAttribute("data-claseinicial")
+    window.open(
+        "https://www.google.com/search?q=" + character + " " + initClass + "+anime+%7C+game+%7C+comic&hl=es&tbm=isch&sxsrf=ALiCzsZMpii8hY74m8NtwKYhQwX2pk2Lxw%3A1661411400353&iflsig=AJiK0e8AAAAAYwcuWBJkdKc4ICDOuvIn67ZE5clWxmiO&ved=0ahUKEwjPkd7it-H5AhXrdDABHbBdDoYQ4dUDCAc&uact=5&oq=leonelllllll+anime+%7C+game+%7C+comic&sclient=img", "_blank");
+    //var window = window.open("https://www.google.com/", "_blank");
+    //window.focus();
   }
 
  
