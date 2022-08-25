@@ -7,3 +7,6 @@ La configuracion de Json Server es sencilla, se debe posicionar en la terminal d
 Estando alli se debe correr el comando:
 
 `json-server --watch assets/db.json`
+
+Se usara el puerto por defecto de json-server:
+`http://localhost:3000`
